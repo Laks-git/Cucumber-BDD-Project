@@ -20,7 +20,7 @@ public class login {
 		System.out.println("Launch Chrome Browser");
 		System.setProperty("webdriver.chrome.driver","C:/Users/SAI KUMAR/Downloads/chromedriver.exe");
 		driver = new ChromeDriver();
-		System.out.println("Enter URL for Petco Site");
+		System.out.println("Enter URL to navigate to Petco Site");
 		driver.get("https://www.petco.com");
 		driver.manage().window().maximize();
 	
