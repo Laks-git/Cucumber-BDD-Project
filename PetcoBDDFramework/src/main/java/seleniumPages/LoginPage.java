@@ -56,14 +56,24 @@ public class LoginPage extends Page_BasePage{
 	
 	public void loginErrorText() {
 		// This will capture error message
-		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
-		  String actual_msg=driver.findElement(By.xpath("//div[@id= = 'loginError']")).getText();
-		    
+		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
+		  String actual_msg=driver.findElement(By.xpath("//div[@id = 'loginError']")).getText();
+		   System.out.println(actual_msg);
 		  // Store message in variable
-		  String expect="The password or email you entered is incorrect.";
+		  String expect = "The password or email you entered is incorrect.";
 
-		  // Verify error message
-		  Assert.assertEquals(expect, actual_msg);
+				  
+		//Conditions
+	
+		  if(actual_msg.equals(expect)){
+			  
+			  System.out.println("Title Matched");
+			  
+		  }else {
+			  
+			  System.out.println("Title didn't match");
+		  }
+		  
 	}
 	
 	
