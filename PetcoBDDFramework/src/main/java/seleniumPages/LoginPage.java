@@ -19,7 +19,7 @@ public class LoginPage extends Page_BasePage{
 	
 	public void navigateToSignInPage() {
 			//Adding wait 
-		 driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
+		 //driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		                
 		        //Instantiate Action Class        
 		        Actions actions = new Actions(driver);

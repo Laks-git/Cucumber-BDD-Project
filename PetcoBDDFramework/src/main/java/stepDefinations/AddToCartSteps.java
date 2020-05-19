@@ -23,22 +23,10 @@ public class AddToCartSteps {
 	LoginPage loginPage = new LoginPage();
 	Page_PetcoAddToCartpage search = new Page_PetcoAddToCartpage();
 	
-	
-	@Before
-	 public void setUP()
-	 {
-		basepage.launchPetcoURL();
-	 }
-
-	@After
-	 public void tearDown()
-	 {
-		basepage.closeBrowser();
-	 }
-	
+		
 	@Given("^registered user is on home page$")
 	public void registered_user_is_on_home_page() {
-	    	    
+		basepage.launchPetcoURL(); 
 	}
 
 	@When("^title of home page is Petco Supplies$")
@@ -49,7 +37,7 @@ public class AddToCartSteps {
 
 	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" in Sign In page$")
 	public void user_enters_and_in_Sign_In_page(String username, String password) {
-	    
+		loginPage.navigateToSignInPage();
 		loginPage.validLogin(username, password);
 	}
 
