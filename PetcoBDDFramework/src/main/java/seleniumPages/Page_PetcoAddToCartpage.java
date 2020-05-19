@@ -9,8 +9,9 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 
 	public void searchItem()
 	{
-		driver.findElement(By.name("searchTerm")).sendKeys("dog");
-		driver.findElement(By.id("submitButton")).click();
+		WebElement searchword = driver.findElement(By.name("searchTerm"));
+		searchword.sendKeys("dog");
+		searchword.click();
 		
 	}
 }
