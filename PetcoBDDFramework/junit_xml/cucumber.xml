@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="53.447694">
-<testcase classname="Petco Login Feature" name="Petco Invalid Login Test Scenario" time="53.447694">
-<failure message="junit.framework.ComparisonFailure: expected:&lt;[Sign in]&gt; but was:&lt;[]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at seleniumPages.LoginPage.verifyLoginPageTitle(LoginPage.java:46)&#13;&#10;&#9;at stepDefinations.login.title_of_login_page_is_Sign_in(login.java:43)&#13;&#10;&#9;at ✽.When title of login page is Sign in(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature:34)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Sign in.........................................failed
-Then user enters "prasanna.kandregula@gmail.com" and "Lucky@143"............skipped
-Then user clicks on Sign In button..........................................skipped
-Then verify invalid login error message.....................................skipped
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="63.196205">
+<testcase classname="Petco Login Feature" name="Petco Valid Login Test Scenario" time="63.196205">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Pet Supplies, Pet Food, and Pet Products | Petco]&gt; but was:&lt;[Access Denied]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at seleniumPages.Page_PetcoHomepage.verifyHomePageTitle(Page_PetcoHomepage.java:18)&#13;&#10;&#9;at stepDefinations.login.user_is_on_home_page(login.java:61)&#13;&#10;&#9;at ✽.Then user is on home page(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature:22)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Sign in.........................................passed
+Then user enters "prasanna.kandregula.lpk@gmail.com" and "Lucky@143"........passed
+Then user clicks on Sign In button..........................................passed
+Then user is on home page...................................................failed
 Then close the browser......................................................skipped
 
 StackTrace:
-junit.framework.ComparisonFailure: expected:<[Sign in]> but was:<[]>
+junit.framework.ComparisonFailure: expected:<[Pet Supplies, Pet Food, and Pet Products | Petco]> but was:<[Access Denied]>
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at seleniumPages.LoginPage.verifyLoginPageTitle(LoginPage.java:46)
-	at stepDefinations.login.title_of_login_page_is_Sign_in(login.java:43)
-	at ✽.When title of login page is Sign in(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature:34)
+	at seleniumPages.Page_PetcoHomepage.verifyHomePageTitle(Page_PetcoHomepage.java:18)
+	at stepDefinations.login.user_is_on_home_page(login.java:61)
+	at ✽.Then user is on home page(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature:22)
 ]]></failure>
 </testcase>
 </testsuite>
