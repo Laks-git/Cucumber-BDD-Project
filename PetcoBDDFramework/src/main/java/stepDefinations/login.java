@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import common.Page_BasePage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -15,9 +16,22 @@ import seleniumPages.Page_PetcoHomepage;
 
 public class login {
 	
+	Page_BasePage basepage = new Page_BasePage();
 	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
-	LoginPage loginPage = new LoginPage();
+	LoginPage loginPage = new LoginPage();	
 	
+	
+	@Before
+	 public void setUP()
+	 {
+		basepage.launchPetcoURL();
+	 }
+
+	@After
+	 public void tearDown()
+	 {
+		basepage.closeBrowser();
+	 }
 		
 	@Given("^user is already on Login Page$")
 	public void user_is_already_on_Login_Page() {
@@ -46,11 +60,16 @@ public class login {
 		
 		petcoHomePage.verifyHomePageTitle();
 	}
+	
+	@Then("^verify invalid login error message$")
+	public void verify_invalid_login_errormessage() {
+		loginPage.loginErrorText();
+	}
 
 	@Then("^close the browser$")
 	public void close_the_browser() {
 		
-		petcoHomePage.exit();
+	
 	}
 	
 }

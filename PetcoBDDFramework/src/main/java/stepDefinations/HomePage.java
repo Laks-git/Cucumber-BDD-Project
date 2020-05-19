@@ -1,5 +1,8 @@
 package stepDefinations;
 
+import common.Page_BasePage;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,18 +11,31 @@ import seleniumPages.Page_PetcoHomepage;
 public class HomePage {
 	
 	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
+	Page_BasePage basepage = new Page_BasePage();
+	
+	@Before
+	 public void setUP()
+	 {
+		basepage.launchPetcoURL();
+	 }
 
-	@Given("^user launches Chrome Browser$")
-	public void user_launches_Chrome_Browser() {
-	    
-		petcoHomePage.launchBrowser();
-	}
+	@After
+	 public void tearDown()
+	 {
+		basepage.closeBrowser();
+	 }
+	
+	@Given("^user launches Chrome Browser with Petco URL$")
+	public void launch_ChromeBrowser_withPetcoURL()
+		{
+	
+		}
 
-	@When("^user open Petco site$")
-	public void user_open_Petco_site() {
-	    
-		petcoHomePage.openPetcoURL();
-	}
+	@Then("^user navigates to home page$")
+	
+		public void navigates_to_petcoHomePage() {
+			}
+	
 
 	@Then("^verify user is on home page$")
 	public void verify_user_is_on_home_page() {
@@ -40,9 +56,11 @@ public class HomePage {
 	}
 
 
-	@Then("^close the Petco site$")
-	public void close_the_Petco_site(){
-		petcoHomePage.exit();
-	}
+  @Then("^close the Petco site$")
+  
+    public void close_petcoSite()
+    {
+	  
+    }
 
 }

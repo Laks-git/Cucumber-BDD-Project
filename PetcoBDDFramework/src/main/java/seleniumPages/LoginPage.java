@@ -15,13 +15,10 @@ import junit.framework.Assert;
 
 public class LoginPage extends Page_BasePage{
 
-	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
+	
 	
 	public void navigateToSignInPage() {
-		//Launch the Browser and URL using Page_PetcoHomepage class
-		petcoHomePage.launchBrowser();
-		petcoHomePage.openPetcoURL();
-		//Adding wait 
+			//Adding wait 
 		 driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		                
 		        //Instantiate Action Class        
@@ -54,8 +51,18 @@ public class LoginPage extends Page_BasePage{
 	public void validLogin(String username, String password) {
 		 driver.findElement(By.name("logonId")).sendKeys(username);
 		 driver.findElement(By.name("logonPassword")).sendKeys(password);
-		 
-	    
+		     
+	}
+	
+	public void loginErrorText() {
+		// This will capture error message
+		  String actual_msg=driver.findElement(By.id("loginError")).getText();
+		    
+		  // Store message in variable
+		  String expect="The password or email you entered is incorrect.";
+
+		  // Verify error message
+		  Assert.assertEquals(expect, actual_msg);
 	}
 	
 	

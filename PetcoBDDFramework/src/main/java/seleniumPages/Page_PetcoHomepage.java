@@ -8,20 +8,11 @@ import junit.framework.Assert;
 
 public class Page_PetcoHomepage extends Page_BasePage {
 
-		public void launchBrowser() {
-		System.out.println("Launch Chrome Browser");
-		System.setProperty("webdriver.chrome.driver","C:/Users/SAI KUMAR/Downloads/chromedriver.exe");
-		driver = new ChromeDriver();
-		}
+	Page_BasePage basepage = new Page_BasePage();
 	
-	public void openPetcoURL() {
-		System.out.println("Enter URL to navigate to Petco Site");
-		driver.get("https://www.petco.com/");
-		driver.manage().window().maximize();
-	}
 	
 	public void verifyHomePageTitle() {
-	String hometitle = driver.getTitle();;
+	String hometitle = driver.getTitle();
     System.out.println(hometitle);
     String expected = "Pet Supplies, Pet Food, and Pet Products | Petco";
     Assert.assertEquals(expected, hometitle);
@@ -43,8 +34,5 @@ public class Page_PetcoHomepage extends Page_BasePage {
 		}
 	}
 	
-	public void exit()
-	{
-		driver.quit();
-	}
+	
 }
