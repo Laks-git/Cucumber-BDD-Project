@@ -2,7 +2,7 @@ Feature: Petco Home Page Feature
 
 
 #without Examples Keyword
-@RegressionTest
+@SmokeTest @RegressionTest
 Scenario: Petco Home Page Test Scenario
 Given user launches Chrome Browser with Petco URL
 When user navigates to home page

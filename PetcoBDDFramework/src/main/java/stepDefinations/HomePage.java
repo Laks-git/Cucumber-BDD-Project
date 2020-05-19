@@ -13,13 +13,13 @@ public class HomePage {
 	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
 	Page_BasePage basepage = new Page_BasePage();
 	
-	@Before
+	@Before("@SmokeTest @RegressionTest")
 	 public void setUP()
 	 {
 		basepage.launchPetcoURL();
 	 }
 
-	@After
+	@After("@SmokeTest @RegressionTest")
 	 public void tearDown()
 	 {
 		basepage.closeBrowser();
