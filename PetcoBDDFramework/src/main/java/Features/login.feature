@@ -20,6 +20,7 @@ When title of login page is Sign in
 Then user enters "<username>" and "<password>"
 Then user clicks on Sign In button
 Then user is on home page
+Then close the browser
 
 
 Examples:
@@ -33,6 +34,7 @@ Given user is already on Login Page
 When title of login page is Sign in
 Then user enters "<username>" and "<password>"
 Then user clicks on Sign In button
+Then close the browser
 
 
 Examples:

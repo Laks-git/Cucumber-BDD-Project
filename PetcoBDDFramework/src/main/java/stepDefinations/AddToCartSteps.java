@@ -13,14 +13,25 @@ import junit.framework.Assert;
 
 public class AddToCartSteps {
 	
-
-		@Given("^guest user is on home page$")
-	public void guest_user_is_on_home_page() {
-		
+	@Given("^registered user is on home page$")
+	public void registered_user_is_on_home_page() {
+	    	    
 	}
 
 	@When("^title of home page is Petco Supplies$")
 	public void title_of_home_page_is_Petco_Supplies() {
+	    
+	    
+	}
+
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" in Sign In page$")
+	public void user_enters_and_in_Sign_In_page(String arg1, String arg2) {
+	    
+	    
+	}
+
+	@Then("^user clicks on Sign In button and navigates to Home page$")
+	public void user_clicks_on_Sign_In_button_and_navigates_to_Home_page() {
 	    
 	    
 	}
@@ -42,25 +53,8 @@ public class AddToCartSteps {
 	    
 	    
 	}
-	@Given("^registered user is on home page$")
-	public void registered_user_is_on_home_page() {
-	    
-	    
-	}
 
-	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" in Sign In page$")
-	public void user_enters_and_in_Sign_In_page(String username, String paswword) {
-	    
 		
-	}
-
-	@Then("^user clicks on Sign In button and navigates to Home page$")
-	public void user_clicks_on_Sign_In_button_and_navigates_to_Home_page() {
-	    
-	    
-	}
-
-
 }
  
  
