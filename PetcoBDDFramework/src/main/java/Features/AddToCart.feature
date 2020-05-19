@@ -2,16 +2,6 @@ Feature: Petco AddtoCart Feature for Guest and Registered users
 
 
 @SmokeTest
-Scenario: Petco AddtoCart Feature for Guest user
-
-Given guest user is on home page
-When title of home page is Petco Supplies
-Then user searches for an item
-Then user naviagtes to PDP by choosing specific item
-Then user adds item to cart
-
-	
-@RegressionTest
 Scenario Outline: Petco AddtoCart Feature for Registered user
 
 Given registered user is on home page
