@@ -19,7 +19,7 @@ public class Page_BasePage {
 	
 	public void closeBrowser()
 	{
-		driver.close();
+		driver.quit();
 		System.out.println("Closed Chrome Browser");
 	}
 	

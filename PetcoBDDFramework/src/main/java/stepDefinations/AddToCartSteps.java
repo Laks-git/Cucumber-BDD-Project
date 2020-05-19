@@ -23,10 +23,21 @@ public class AddToCartSteps {
 	LoginPage loginPage = new LoginPage();
 	Page_PetcoAddToCartpage search = new Page_PetcoAddToCartpage();
 	
+	@Before("@SmokeTest @RegressionTest")
+	 public void setUP()
+	 {
+		basepage.launchPetcoURL();
+	 }
+
+	@After("@SmokeTest @RegressionTest")
+	 public void tearDown()
+	 {
+		basepage.closeBrowser();
+	 }
 		
 	@Given("^registered user is on home page$")
 	public void registered_user_is_on_home_page() {
-		basepage.launchPetcoURL(); 
+		
 	}
 
 	@When("^title of home page is Petco Supplies$")
