@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 16529971900,
+              "duration": 16070093400,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 43,
-        "name": "Petco Invalid Login Test Scenario",
+        "line": 17,
+        "name": "Petco AddtoCart Feature for Registered user",
         "description": "",
-        "id": "petco-login-feature;petco-invalid-login-test-scenario;;2",
+        "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user;;2",
         "after": [
           {
             "result": {
-              "duration": 1341695500,
+              "duration": 1831944200,
               "status": "passed"
             },
             "match": {
@@ -34,47 +34,47 @@
         "steps": [
           {
             "result": {
-              "duration": 2579400600,
+              "duration": 770120500,
               "status": "passed"
             },
-            "line": 33,
-            "name": "user is already on Login Page",
+            "line": 7,
+            "name": "registered user is on home page",
             "match": {
-              "location": "login.user_is_already_on_Login_Page()"
+              "location": "AddToCartSteps.registered_user_is_on_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 18551900,
+              "duration": 647128700,
               "status": "passed"
             },
-            "line": 34,
-            "name": "title of login page is Sign in",
+            "line": 8,
+            "name": "title of home page is Petco Supplies",
             "match": {
-              "location": "login.title_of_login_page_is_Sign_in()"
+              "location": "AddToCartSteps.title_of_home_page_is_Petco_Supplies()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4255102300,
+              "duration": 9272588100,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user enters \"prasanna.kandregula@gmail.com\" and \"Lucky@143\"",
+            "line": 9,
+            "name": "user enters \"prasanna.kandregula.lpk@gmail.com\" and \"Lucky@143\" in Sign In page",
             "match": {
               "arguments": [
                 {
-                  "val": "prasanna.kandregula@gmail.com",
+                  "val": "prasanna.kandregula.lpk@gmail.com",
                   "offset": 13
                 },
                 {
                   "val": "Lucky@143",
-                  "offset": 49
+                  "offset": 53
                 }
               ],
-              "location": "login.user_enters_and(String,String)"
+              "location": "AddToCartSteps.user_enters_and_in_Sign_In_page(String,String)"
             },
             "matchedColumns": [
               0,
@@ -84,53 +84,69 @@
           },
           {
             "result": {
-              "duration": 2779545300,
+              "duration": 2852386000,
               "status": "passed"
             },
-            "line": 36,
-            "name": "user clicks on Sign In button",
+            "line": 10,
+            "name": "user clicks on Sign In button and navigates to Home page",
             "match": {
-              "location": "login.user_clicks_on_Sign_In_button()"
+              "location": "AddToCartSteps.user_clicks_on_Sign_In_button_and_navigates_to_Home_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 879859300,
+              "duration": 8413676900,
               "status": "passed"
             },
-            "line": 37,
-            "name": "verify invalid login error message",
+            "line": 11,
+            "name": "user searches for an item",
             "match": {
-              "location": "login.verify_invalid_login_errormessage()"
+              "location": "AddToCartSteps.user_searches_for_an_item()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 40400,
+              "duration": 9306873000,
               "status": "passed"
             },
-            "line": 38,
-            "name": "close the browser",
+            "line": 12,
+            "name": "user naviagtes to PDP by choosing specific item",
             "match": {
-              "location": "login.close_the_browser()"
+              "location": "AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2800625200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user adds item to cart",
+            "match": {
+              "location": "AddToCartSteps.user_adds_item_to_cart()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 30,
+            "line": 4,
             "name": "@RegressionTest"
+          },
+          {
+            "line": 4,
+            "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "Petco Login Feature",
+    "name": "Petco AddtoCart Feature for Guest and Registered users",
     "description": "",
-    "id": "petco-login-feature",
+    "id": "petco-addtocart-feature-for-guest-and-registered-users",
     "keyword": "Feature",
-    "uri": "C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature"
+    "uri": "C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature"
   }
 ]

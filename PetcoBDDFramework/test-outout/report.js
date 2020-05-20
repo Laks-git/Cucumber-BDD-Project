@@ -1,111 +1,124 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature");
 formatter.feature({
   "line": 1,
-  "name": "Petco Login Feature",
+  "name": "Petco AddtoCart Feature for Guest and Registered users",
   "description": "",
-  "id": "petco-login-feature",
+  "id": "petco-addtocart-feature-for-guest-and-registered-users",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 31,
-  "name": "Petco Invalid Login Test Scenario",
+  "line": 5,
+  "name": "Petco AddtoCart Feature for Registered user",
   "description": "",
-  "id": "petco-login-feature;petco-invalid-login-test-scenario",
+  "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 30,
+      "line": 4,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 4,
       "name": "@RegressionTest"
     }
   ]
 });
 formatter.step({
-  "line": 33,
-  "name": "user is already on Login Page",
+  "line": 7,
+  "name": "registered user is on home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 34,
-  "name": "title of login page is Sign in",
+  "line": 8,
+  "name": "title of home page is Petco Supplies",
   "keyword": "When "
 });
 formatter.step({
-  "line": 35,
-  "name": "user enters \"\u003cusername1\u003e\" and \"\u003cpassword\u003e\"",
+  "line": 9,
+  "name": "user enters \"\u003cusername1\u003e\" and \"\u003cpassword1\u003e\" in Sign In page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 36,
-  "name": "user clicks on Sign In button",
+  "line": 10,
+  "name": "user clicks on Sign In button and navigates to Home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 37,
-  "name": "verify invalid login error message",
+  "line": 11,
+  "name": "user searches for an item",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 38,
-  "name": "close the browser",
+  "line": 12,
+  "name": "user naviagtes to PDP by choosing specific item",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "user adds item to cart",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 41,
+  "line": 15,
   "name": "",
   "description": "",
-  "id": "petco-login-feature;petco-invalid-login-test-scenario;",
+  "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user;",
   "rows": [
     {
       "cells": [
         "username1",
-        "password"
+        "password1"
       ],
-      "line": 42,
-      "id": "petco-login-feature;petco-invalid-login-test-scenario;;1"
+      "line": 16,
+      "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user;;1"
     },
     {
       "cells": [
-        "prasanna.kandregula@gmail.com",
+        "prasanna.kandregula.lpk@gmail.com",
         "Lucky@143"
       ],
-      "line": 43,
-      "id": "petco-login-feature;petco-invalid-login-test-scenario;;2"
+      "line": 17,
+      "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 16529971900,
+  "duration": 16070093400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 43,
-  "name": "Petco Invalid Login Test Scenario",
+  "line": 17,
+  "name": "Petco AddtoCart Feature for Registered user",
   "description": "",
-  "id": "petco-login-feature;petco-invalid-login-test-scenario;;2",
+  "id": "petco-addtocart-feature-for-guest-and-registered-users;petco-addtocart-feature-for-registered-user;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 30,
+      "line": 4,
       "name": "@RegressionTest"
+    },
+    {
+      "line": 4,
+      "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "line": 33,
-  "name": "user is already on Login Page",
+  "line": 7,
+  "name": "registered user is on home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 34,
-  "name": "title of login page is Sign in",
+  "line": 8,
+  "name": "title of home page is Petco Supplies",
   "keyword": "When "
 });
 formatter.step({
-  "line": 35,
-  "name": "user enters \"prasanna.kandregula@gmail.com\" and \"Lucky@143\"",
+  "line": 9,
+  "name": "user enters \"prasanna.kandregula.lpk@gmail.com\" and \"Lucky@143\" in Sign In page",
   "matchedColumns": [
     0,
     1
@@ -113,74 +126,86 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 36,
-  "name": "user clicks on Sign In button",
+  "line": 10,
+  "name": "user clicks on Sign In button and navigates to Home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 37,
-  "name": "verify invalid login error message",
+  "line": 11,
+  "name": "user searches for an item",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 38,
-  "name": "close the browser",
+  "line": 12,
+  "name": "user naviagtes to PDP by choosing specific item",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "user adds item to cart",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "login.user_is_already_on_Login_Page()"
+  "location": "AddToCartSteps.registered_user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 2579400600,
+  "duration": 770120500,
   "status": "passed"
 });
 formatter.match({
-  "location": "login.title_of_login_page_is_Sign_in()"
+  "location": "AddToCartSteps.title_of_home_page_is_Petco_Supplies()"
 });
 formatter.result({
-  "duration": 18551900,
+  "duration": 647128700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "prasanna.kandregula@gmail.com",
+      "val": "prasanna.kandregula.lpk@gmail.com",
       "offset": 13
     },
     {
       "val": "Lucky@143",
-      "offset": 49
+      "offset": 53
     }
   ],
-  "location": "login.user_enters_and(String,String)"
+  "location": "AddToCartSteps.user_enters_and_in_Sign_In_page(String,String)"
 });
 formatter.result({
-  "duration": 4255102300,
+  "duration": 9272588100,
   "status": "passed"
 });
 formatter.match({
-  "location": "login.user_clicks_on_Sign_In_button()"
+  "location": "AddToCartSteps.user_clicks_on_Sign_In_button_and_navigates_to_Home_page()"
 });
 formatter.result({
-  "duration": 2779545300,
+  "duration": 2852386000,
   "status": "passed"
 });
 formatter.match({
-  "location": "login.verify_invalid_login_errormessage()"
+  "location": "AddToCartSteps.user_searches_for_an_item()"
 });
 formatter.result({
-  "duration": 879859300,
+  "duration": 8413676900,
   "status": "passed"
 });
 formatter.match({
-  "location": "login.close_the_browser()"
+  "location": "AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item()"
 });
 formatter.result({
-  "duration": 40400,
+  "duration": 9306873000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddToCartSteps.user_adds_item_to_cart()"
+});
+formatter.result({
+  "duration": 2800625200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1341695500,
+  "duration": 1831944200,
   "status": "passed"
 });
 });

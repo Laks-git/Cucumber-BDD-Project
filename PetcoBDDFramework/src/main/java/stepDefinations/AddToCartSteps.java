@@ -21,7 +21,7 @@ public class AddToCartSteps {
 	Page_BasePage basepage = new Page_BasePage();
 	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
 	LoginPage loginPage = new LoginPage();
-	Page_PetcoAddToCartpage search = new Page_PetcoAddToCartpage();
+	Page_PetcoAddToCartpage item = new Page_PetcoAddToCartpage();
 	
 	@Before("@SmokeTest @RegressionTest")
 	 public void setUP()
@@ -61,19 +61,22 @@ public class AddToCartSteps {
 	@Then("^user searches for an item$")
 	public void user_searches_for_an_item() {
 	    
-	    search.searchItem();
+		item.searchItem();
+		item.verifysearchpageTitle();
 	}
 
 	@Then("^user naviagtes to PDP by choosing specific item$")
 	public void user_naviagtes_to_PDP_by_choosing_specific_item() {
-	    
+		item.navigatetoPDP();
+		item.verifyAddToCartEnabled();
 	    
 	}
 
 	@Then("^user adds item to cart$")
 	public void user_adds_item_to_cart() {
 	    
-	    
+		item.navigatetoCart();
+		item.verifycartTitle();
 	}
 
 		

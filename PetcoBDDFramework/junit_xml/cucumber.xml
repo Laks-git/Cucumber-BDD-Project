@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.384167">
-<testcase classname="Petco Login Feature" name="Petco Invalid Login Test Scenario" time="28.384167">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Sign in.........................................passed
-Then user enters "prasanna.kandregula@gmail.com" and "Lucky@143"............passed
-Then user clicks on Sign In button..........................................passed
-Then verify invalid login error message.....................................passed
-Then close the browser......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.965436">
+<testcase classname="Petco AddtoCart Feature for Guest and Registered users" name="Petco AddtoCart Feature for Registered user" time="51.965436">
+<system-out><![CDATA[Given registered user is on home page.......................................passed
+When title of home page is Petco Supplies...................................passed
+Then user enters "prasanna.kandregula.lpk@gmail.com" and "Lucky@143" in Sign In page.passed
+Then user clicks on Sign In button and navigates to Home page...............passed
+Then user searches for an item..............................................passed
+Then user naviagtes to PDP by choosing specific item........................passed
+Then user adds item to cart.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
