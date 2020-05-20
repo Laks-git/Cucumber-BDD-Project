@@ -60,7 +60,7 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 	
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 120);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='add2CartBtn_cpy1']"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class = 'btn btn-primary btn-full show']"))).click();
 		
 	}
 	
@@ -79,4 +79,6 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 	    	System.out.println("Cart title not matched");
 	    }
 	}
+	
+		  	 	
 }
