@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import common.Page_BasePage;
 import seleniumPages.Page_PetcoHomepage;
@@ -49,8 +51,9 @@ public class LoginPage extends Page_BasePage{
 
 	
 	public void validLogin(String username, String password) {
-		 driver.findElement(By.name("logonId")).sendKeys(username);
-		 driver.findElement(By.name("logonPassword")).sendKeys(password);
+		WebDriverWait wait = new WebDriverWait(driver, 120);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("logonId"))).sendKeys(username);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("logonPassword"))).sendKeys(password);
 		     
 	}
 	
@@ -79,7 +82,8 @@ public class LoginPage extends Page_BasePage{
 	
 	
 	public void loginformSubmit() {
-		driver.findElement(By.xpath("//button[@id='WC_AccountDisplay_links_2']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 120);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='WC_AccountDisplay_links_2']"))).click();
 	}
 	
 

@@ -14,6 +14,7 @@ import junit.framework.Assert;
 import seleniumPages.LoginPage;
 import seleniumPages.Page_PetcoAddToCartpage;
 import seleniumPages.Page_PetcoHomepage;
+import seleniumPages.Page_ProceedCheckout;
  
 
 public class AddToCartSteps {
@@ -21,7 +22,8 @@ public class AddToCartSteps {
 	Page_BasePage basepage = new Page_BasePage();
 	Page_PetcoHomepage petcoHomePage = new Page_PetcoHomepage();
 	LoginPage loginPage = new LoginPage();
-	Page_PetcoAddToCartpage search = new Page_PetcoAddToCartpage();
+	Page_PetcoAddToCartpage item = new Page_PetcoAddToCartpage();
+	Page_ProceedCheckout checkout = new Page_ProceedCheckout();
 	
 	@Before("@SmokeTest @RegressionTest")
 	 public void setUP()
@@ -56,25 +58,67 @@ public class AddToCartSteps {
 	public void user_clicks_on_Sign_In_button_and_navigates_to_Home_page() {
 	    
 		loginPage.loginformSubmit();
+	
 	}
 
 	@Then("^user searches for an item$")
 	public void user_searches_for_an_item() {
 	    
-	    search.searchItem();
+		
+		item.searchItem();
+		item.verifysearchpageTitle();
 	}
 
 	@Then("^user naviagtes to PDP by choosing specific item$")
 	public void user_naviagtes_to_PDP_by_choosing_specific_item() {
-	    
+		item.navigatetoPDP();
+		item.verifyAddToCartEnabled();
 	    
 	}
 
 	@Then("^user adds item to cart$")
 	public void user_adds_item_to_cart() {
 	    
+		item.navigatetoCart();
+		
+	}
+
+	@Then("^navigates to cart page$")
+	public void navigates_to_cart_page() {
+		item.verifycartTitle();
 	    
 	}
+	@Then("^proceed to checkout$")
+	public void proceed_to_checkout() {
+	    
+	    checkout.proceedCheckout();
+	    checkout.verifycheckoutpageTitle();
+	}
+
+	@Then("^selects second Day Delivery$")
+	public void selects_nd_Day_Delivery(int arg1) {
+	    
+	    checkout.selectShippingOption();
+	}
+
+	@Then("^Enters Credit card details$")
+	public void enters_Credit_card_details() {
+	    
+	    
+	}
+
+	@Then("^verifies Place Order button enabled or not$")
+	public void verifies_Place_Order_button_enabled_or_not() {
+	    
+	    
+	}
+
+	@Then("^places order based on availability of Place Order button$")
+	public void places_order_based_on_availability_of_Place_Order_button() {
+	    
+	    
+	}
+
 
 		
 }

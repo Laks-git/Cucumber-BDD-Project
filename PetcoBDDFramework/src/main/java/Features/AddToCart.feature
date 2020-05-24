@@ -1,4 +1,4 @@
-Feature: Petco AddtoCart Feature for Guest and Registered users
+Feature: Petco AddtoCart Feature for Registered users
 
 
 @SmokeTest @RegressionTest
@@ -11,7 +11,17 @@ Then user clicks on Sign In button and navigates to Home page
 Then user searches for an item
 Then user naviagtes to PDP by choosing specific item
 Then user adds item to cart
+Then navigates to cart page
+And proceed to checkout
+Then selects second Day Delivery
+Then Enters Credit card details
+Then verifies Place Order button enabled or not
+And places order based on availability of Place Order button
+
 
 Examples:
 	| 				username1			 | password1 |
 	| prasanna.kandregula.lpk@gmail.com  | Lucky@143 |
+
+	
+

@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.384167">
-<testcase classname="Petco Login Feature" name="Petco Invalid Login Test Scenario" time="28.384167">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Sign in.........................................passed
-Then user enters "prasanna.kandregula@gmail.com" and "Lucky@143"............passed
-Then user clicks on Sign In button..........................................passed
-Then verify invalid login error message.....................................passed
-Then close the browser......................................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="107.509367">
+<testcase classname="Petco AddtoCart Feature for Registered users" name="Petco AddtoCart Feature for Registered user" time="107.509367">
+<failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=81.0.4044.138)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\SAIKUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 54a5e1a90ec292a858d530f42b5bb0f4&#10;*** Element info: {Using=xpath, value=//a[@id='catalogEntry_img301024']/img[@class='img-responsive']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;&#10;&#9;at seleniumPages.Page_PetcoAddToCartpage.navigatetoPDP(Page_PetcoAddToCartpage.java:40)&#13;&#10;&#9;at stepDefinations.AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item(AddToCartSteps.java:74)&#13;&#10;&#9;at ✽.Then user naviagtes to PDP by choosing specific item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:12)&#13;&#10;"><![CDATA[Given registered user is on home page.......................................passed
+When title of home page is Petco Supplies...................................passed
+Then user enters "prasanna.kandregula.lpk@gmail.com" and "Lucky@143" in Sign In page.passed
+Then user clicks on Sign In button and navigates to Home page...............passed
+Then user searches for an item..............................................passed
+Then user naviagtes to PDP by choosing specific item........................failed
+Then user adds item to cart.................................................skipped
+Then navigates to cart page.................................................skipped
+And proceed to checkout.....................................................skipped
+Then selects second Day Delivery............................................skipped
+Then Enters Credit card details.............................................skipped
+Then verifies Place Order button enabled or not.............................skipped
+And places order based on availability of Place Order button................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\SAIKUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54a5e1a90ec292a858d530f42b5bb0f4
+*** Element info: {Using=xpath, value=//a[@id='catalogEntry_img301024']/img[@class='img-responsive']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at seleniumPages.Page_PetcoAddToCartpage.navigatetoPDP(Page_PetcoAddToCartpage.java:40)
+	at stepDefinations.AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item(AddToCartSteps.java:74)
+	at ✽.Then user naviagtes to PDP by choosing specific item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:12)
+]]></failure>
 </testcase>
 </testsuite>
