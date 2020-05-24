@@ -1,6 +1,7 @@
 package seleniumPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -60,7 +61,19 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 	
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 120);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class = 'btn btn-primary btn-full show']"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id = 'add2CartBtn_cpy1']")));
+		
+		
+	    int attempts = 0;
+	    while(attempts < 2) {
+	        try {
+	            driver.findElement(By.xpath("//*[@id = 'add2CartBtn_cpy1']")).click();
+	            
+	            break;
+	        } catch(StaleElementReferenceException e) {
+	        }
+	        attempts++;
+	    }
 		
 	}
 	

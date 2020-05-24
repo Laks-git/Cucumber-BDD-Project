@@ -13,8 +13,9 @@ import junit.framework.Assert;
 public class Page_ProceedCheckout extends Page_BasePage{
 	
 	public void proceedCheckout() {
-		WebElement checkoutbtn = (WebElement) driver.findElements(By.xpath("//div[@class='petco-checkout']//a[@id='continueReviewPage']"));
-		checkoutbtn.click();
+		WebDriverWait wait = new WebDriverWait(driver, 120);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='petco-checkout']//a[@id='continueReviewPage']"))).click();
+		
 	}
 
 	public void verifycheckoutpageTitle(){
@@ -35,7 +36,7 @@ public class Page_ProceedCheckout extends Page_BasePage{
 	public void selectShippingOption(){
 	
 		// Store all the elements of the same category in the list of WebLements.
-	      java.util.List<WebElement> list = driver.findElements(By.xpath("//div[@class='col-6-sm']//input[@id='shipMode_1_0']"));
+	      java.util.List<WebElement> list = driver.findElements(By.xpath("//*[@class='col-6-sm']//input[@id='shipMode_1_0']"));
 
 	      // Create a boolean variable to store true/false.
 	      Boolean is_selected = list.get(0).isSelected();

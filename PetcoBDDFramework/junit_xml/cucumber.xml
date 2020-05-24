@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="107.509367">
-<testcase classname="Petco AddtoCart Feature for Registered users" name="Petco AddtoCart Feature for Registered user" time="107.509367">
-<failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=81.0.4044.138)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\SAIKUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 54a5e1a90ec292a858d530f42b5bb0f4&#10;*** Element info: {Using=xpath, value=//a[@id='catalogEntry_img301024']/img[@class='img-responsive']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;&#10;&#9;at seleniumPages.Page_PetcoAddToCartpage.navigatetoPDP(Page_PetcoAddToCartpage.java:40)&#13;&#10;&#9;at stepDefinations.AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item(AddToCartSteps.java:74)&#13;&#10;&#9;at ✽.Then user naviagtes to PDP by choosing specific item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:12)&#13;&#10;"><![CDATA[Given registered user is on home page.......................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="88.696754">
+<testcase classname="Petco AddtoCart Feature for Registered users" name="Petco AddtoCart Feature for Registered user" time="88.696754">
+<failure message="org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41532&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)&#13;&#10;&#9;at seleniumPages.Page_PetcoAddToCartpage.searchItem(Page_PetcoAddToCartpage.java:20)&#13;&#10;&#9;at stepDefinations.AddToCartSteps.user_searches_for_an_item(AddToCartSteps.java:68)&#13;&#10;&#9;at ✽.Then user searches for an item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:11)&#13;&#10;Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41532&#13;&#10;&#9;at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)&#13;&#10;&#9;at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)&#13;&#10;&#9;at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)&#13;&#10;&#9;at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)&#13;&#10;&#9;at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)&#13;&#10;&#9;at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)&#13;&#10;&#9;at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)&#13;&#10;&#9;at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)&#13;&#10;&#9;at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)&#13;&#10;&#9;at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)&#13;&#10;&#9;at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)&#13;&#10;&#9;at okhttp3.RealCall.execute(RealCall.java:77)&#13;&#10;&#9;at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)&#13;&#10;&#9;at seleniumPages.Page_PetcoAddToCartpage.searchItem(Page_PetcoAddToCartpage.java:20)&#13;&#10;&#9;at stepDefinations.AddToCartSteps.user_searches_for_an_item(AddToCartSteps.java:68)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;&#10;Caused by: java.net.ConnectException: Connection refused: connect&#13;&#10;&#9;at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)&#13;&#10;&#9;at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)&#13;&#10;&#9;at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)&#13;&#10;&#9;at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)&#13;&#10;&#9;at java.net.AbstractPlainSocketImpl.connect(Unknown Source)&#13;&#10;&#9;at java.net.PlainSocketImpl.connect(Unknown Source)&#13;&#10;&#9;at java.net.SocksSocketImpl.connect(Unknown Source)&#13;&#10;&#9;at java.net.Socket.connect(Unknown Source)&#13;&#10;&#9;at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)&#13;&#10;&#9;at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)&#13;&#10;&#9;... 85 more&#13;&#10;"><![CDATA[Given registered user is on home page.......................................passed
 When title of home page is Petco Supplies...................................passed
 Then user enters "prasanna.kandregula.lpk@gmail.com" and "Lucky@143" in Sign In page.passed
 Then user clicks on Sign In button and navigates to Home page...............passed
-Then user searches for an item..............................................passed
-Then user naviagtes to PDP by choosing specific item........................failed
+Then user searches for an item..............................................failed
+Then user naviagtes to PDP by choosing specific item........................skipped
 Then user adds item to cart.................................................skipped
 Then navigates to cart page.................................................skipped
 And proceed to checkout.....................................................skipped
@@ -16,34 +16,116 @@ Then verifies Place Order button enabled or not.............................skip
 And places order based on availability of Place Order button................skipped
 
 StackTrace:
-org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=81.0.4044.138)
+org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41532
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\SAIKUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 54a5e1a90ec292a858d530f42b5bb0f4
-*** Element info: {Using=xpath, value=//a[@id='catalogEntry_img301024']/img[@class='img-responsive']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: 'DESKTOP-T3PS0N3', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)
+	at seleniumPages.Page_PetcoAddToCartpage.searchItem(Page_PetcoAddToCartpage.java:20)
+	at stepDefinations.AddToCartSteps.user_searches_for_an_item(AddToCartSteps.java:68)
+	at ✽.Then user searches for an item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:11)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41532
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at seleniumPages.Page_PetcoAddToCartpage.navigatetoPDP(Page_PetcoAddToCartpage.java:40)
-	at stepDefinations.AddToCartSteps.user_naviagtes_to_PDP_by_choosing_specific_item(AddToCartSteps.java:74)
-	at ✽.Then user naviagtes to PDP by choosing specific item(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/AddToCart.feature:12)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)
+	at seleniumPages.Page_PetcoAddToCartpage.searchItem(Page_PetcoAddToCartpage.java:20)
+	at stepDefinations.AddToCartSteps.user_searches_for_an_item(AddToCartSteps.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 85 more
 ]]></failure>
 </testcase>
 </testsuite>
