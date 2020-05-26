@@ -3,8 +3,9 @@ package seleniumPages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import common.Page_BasePage;
 import junit.framework.Assert;
@@ -29,6 +30,12 @@ public class Page_CreateAccount extends Page_BasePage{
 		     //Now Select 'Alternative' from sub menu which has got displayed on mouse hover of 'Sign In'
 		     subMenuOption.click();
 		     System.out.println("Selected 'Register' from Menu");
+		     
+		     	//WebDriverWait wait = new WebDriverWait(driver, 120);
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[contains(text(),'Register')]")));
+				//WebElement registerword = driver.findElement(By.xpath(".//*[contains(text(),'Register')]"));
+				//registerword.click();
+				//System.out.println("Selected 'Register' from Menu");
 	}
 	
 	public void verifyRegistrationFormtitle()

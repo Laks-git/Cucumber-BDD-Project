@@ -36,7 +36,7 @@ public class CreateAccount {
 	@When("^Registration form title matches$")
 	public void registration_form_title_matches() {
 	    
-		createacctpage.verifyRegistrationFormtitle();
+		//createacctpage.verifyRegistrationFormtitle();
 	}
 
 	@Then("^enter all the required fields and submit the registration form$")
@@ -48,7 +48,7 @@ public class CreateAccount {
 	@Then("^navigate to Homepage$")
 	public void navigate_to_Homepage() {
 	    
-		petcoHomePage.verifyHomePageTitle();
+		//petcoHomePage.verifyHomePageTitle();
 	}
 
 
