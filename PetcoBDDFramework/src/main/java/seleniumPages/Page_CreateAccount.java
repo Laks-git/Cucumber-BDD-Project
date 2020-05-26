@@ -3,10 +3,7 @@ package seleniumPages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import common.Page_BasePage;
 import junit.framework.Assert;
 
@@ -127,7 +124,7 @@ public class Page_CreateAccount extends Page_BasePage{
 		            System.out.println("Checkbox is Toggled Off");					
 		        }		
 					
-		        driver.findElement(By.xpath("//*[@id= 'WC_UserRegistrationAddForm_links_1']")).click();
+		        driver.findElement(By.xpath("//*[@id= 'WC_UserRegistrationAddForm_links_1']")).submit();
 		        
 				reader.setCellData("CreateAccount_Data", "status", rowNum, "Pass");		//writes data into a cell
 				

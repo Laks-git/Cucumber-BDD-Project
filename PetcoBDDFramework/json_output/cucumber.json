@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 27002423300,
+              "duration": 21814954200,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 8098768300,
+              "duration": 11569642000,
               "status": "passed"
             },
             "match": {
@@ -34,8 +34,9 @@
         "steps": [
           {
             "result": {
-              "duration": 20984816800,
-              "status": "passed"
+              "duration": 122680655800,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: .//*[contains(text(),\u0027Register\u0027)] (tried for 120 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-T3PS0N3\u0027, ip: \u0027192.168.1.6\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\\Users\\SAIKUM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f7d5d8f6d3ecf926611300dc5e09503f\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat seleniumPages.Page_CreateAccount.navigateToRegistrationForm(Page_CreateAccount.java:35)\r\n\tat stepDefinations.CreateAccount.user_is_on_Registration_page(CreateAccount.java:33)\r\n\tat ✽.Given User is on Registration page(C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/CreateAccount.feature:6)\r\n",
+              "status": "failed"
             },
             "line": 6,
             "name": "User is on Registration page",
@@ -46,8 +47,7 @@
           },
           {
             "result": {
-              "duration": 96339900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Registration form title matches",
@@ -58,8 +58,7 @@
           },
           {
             "result": {
-              "duration": 47690164800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "enter all the required fields and submit the registration form",
@@ -70,8 +69,35 @@
           },
           {
             "result": {
-              "duration": 42200,
-              "status": "passed"
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "navigate to Homepage",
+            "match": {
+              "location": "CreateAccount.navigate_to_Homepage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 3,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Create Account/Registration feature for new customer\u0027s",
+    "description": "",
+    "id": "create-account/registration-feature-for-new-customer\u0027s",
+    "keyword": "Feature",
+    "uri": "C:/Users/SAI KUMAR/git/Cucumber-BDD-Project/PetcoBDDFramework/src/main/java/Features/CreateAccount.feature"
+  }
+]  "status": "skipped"
             },
             "line": 9,
             "name": "navigate to Homepage",
