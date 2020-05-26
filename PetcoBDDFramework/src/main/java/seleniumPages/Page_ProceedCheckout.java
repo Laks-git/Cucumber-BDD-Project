@@ -3,6 +3,7 @@ package seleniumPages;
 import java.awt.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,8 +15,18 @@ public class Page_ProceedCheckout extends Page_BasePage{
 	
 	public void proceedCheckout() {
 		WebDriverWait wait = new WebDriverWait(driver, 120);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='petco-checkout']//a[@id='continueReviewPage']"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='petco-checkout']//a[@id='continueReviewPage']")));
 		
+		 int attempts = 0;
+		    while(attempts < 2) {
+		        try {
+		            driver.findElement(By.xpath("//*[@class='petco-checkout']//a[@id='continueReviewPage']")).click();
+		            
+		            break;
+		        } catch(StaleElementReferenceException e) {
+		        }
+		        attempts++;
+		    }
 	}
 
 	public void verifycheckoutpageTitle(){
