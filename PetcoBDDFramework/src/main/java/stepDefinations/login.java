@@ -1,15 +1,15 @@
 package stepDefinations;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import common.Page_BasePage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import seleniumPages.LoginPage;
 import seleniumPages.Page_PetcoHomepage;
@@ -22,17 +22,12 @@ public class login {
 	
 	
 	@Before
-	 public void setUP()
+	 public void launchBrowser()
 	 {
 		basepage.launchPetcoURL();
 	 }
 
-	@After
-	 public void tearDown()
-	 {
-		basepage.closeBrowser();
-	 }
-		
+
 	@Given("^user is already on Login Page$")
 	public void user_is_already_on_Login_Page() {
 		loginPage.navigateToSignInPage();

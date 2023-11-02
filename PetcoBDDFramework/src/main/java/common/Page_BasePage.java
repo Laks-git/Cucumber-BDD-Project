@@ -1,6 +1,8 @@
 package common;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Page_BasePage {
@@ -10,10 +12,11 @@ public class Page_BasePage {
 	
 	public void launchPetcoURL() {
 		System.out.println("Launch Chrome Browser");
-		System.setProperty("webdriver.chrome.driver","C:/Users/SAI KUMAR/Downloads/chromedriver.exe");
-		driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();driver.manage().window().maximize();
+
 		System.out.println("Enter URL to navigate to Petco Site");
-		driver.get("https://www.petco.com/");
+		driver.get("https://www.orangehrm.com/");
 		driver.manage().window().maximize();
 	}
 	

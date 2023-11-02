@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.excel.lib.util.Xls_Reader;
 
+import java.time.Duration;
+
 public class Writedata {
 	
 	public static WebDriver driver;
@@ -61,9 +63,9 @@ public class Writedata {
 	
 	String state = reader.getCellData("CreateAccount_Data", "state", 2);
 	System.out.println(state);
-	
-	
-	WebDriverWait wait = new WebDriverWait(driver, 120);
+
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id= 'shipping-address-state']")));
 	Select drpState = new Select(driver.findElement(By.xpath("//*[@id= 'shipping-address-state']")));
 	drpState.selectByVisibleText(state);

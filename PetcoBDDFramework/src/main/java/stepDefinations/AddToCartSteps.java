@@ -1,15 +1,15 @@
 package stepDefinations;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import common.Page_BasePage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import seleniumPages.LoginPage;
 import seleniumPages.Page_PetcoAddToCartpage;
@@ -24,18 +24,18 @@ public class AddToCartSteps {
 	LoginPage loginPage = new LoginPage();
 	Page_PetcoAddToCartpage item = new Page_PetcoAddToCartpage();
 	Page_ProceedCheckout checkout = new Page_ProceedCheckout();
-	
-	@Before("@SmokeTest @RegressionTest")
-	 public void setUP()
-	 {
-		basepage.launchPetcoURL();
-	 }
 
-	@After("@SmokeTest @RegressionTest")
-	 public void tearDown()
-	 {
+	@Before
+	public void launchBrowser()
+	{
+		basepage.launchPetcoURL();
+	}
+
+	@After
+	public void closeBrowser()
+	{
 		basepage.closeBrowser();
-	 }
+	}
 		
 	@Given("^registered user is on home page$")
 	public void registered_user_is_on_home_page() {

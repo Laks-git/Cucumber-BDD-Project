@@ -1,5 +1,6 @@
 package seleniumPages;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,9 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import common.Page_BasePage;
 import seleniumPages.Page_PetcoHomepage;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
 public class LoginPage extends Page_BasePage{
@@ -51,7 +49,7 @@ public class LoginPage extends Page_BasePage{
 
 	
 	public void validLogin(String username, String password) {
-		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("logonId"))).sendKeys(username);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("logonPassword"))).sendKeys(password);
 		     
@@ -82,7 +80,7 @@ public class LoginPage extends Page_BasePage{
 	
 	
 	public void loginformSubmit() {
-		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='WC_AccountDisplay_links_2']"))).click();
 	}
 	

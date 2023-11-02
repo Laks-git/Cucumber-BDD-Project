@@ -8,11 +8,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import common.Page_BasePage;
 import junit.framework.Assert;
 
+import java.time.Duration;
+
 public class Page_PetcoAddToCartpage extends Page_BasePage {
 
 	public void searchItem()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("SimpleSearchForm_SearchTerm")));
 		WebElement searchword = driver.findElement(By.id("SimpleSearchForm_SearchTerm"));
 		searchword.sendKeys("dog");
@@ -36,7 +38,7 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 	
 	public void navigatetoPDP()
 	{
-	WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='catalogEntry_img301024']/img[@class='img-responsive']"))).click();
 	
 	}
@@ -59,7 +61,7 @@ public class Page_PetcoAddToCartpage extends Page_BasePage {
 	public void navigatetoCart()
 	
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 120);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(20000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class = 'btn btn-primary btn-full show']"))).click();
 		
 	}
